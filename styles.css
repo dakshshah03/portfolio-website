@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Josefin Sans', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -13,13 +8,15 @@ body {
 .header {
     height: 54px;
     color: black;
-    background: #74c8e9;
-    border-bottom: 4px solid #ddd;
-    position: fixed;
+    background: #3a3939;
+    border-bottom: 4px solid #0164d6;
+
+    /* position: fixed;
+    width: 100%; */
 
     display: flex;
     justify-content: space-between;
-    padding: 8px;
+    padding: 2px;
 }
 
 .header-container {
@@ -33,7 +30,7 @@ body {
     margin: 0px;
 }
 
-.header-left {
+.header-right {
     display: flex;
     align-items: center;
     gap: 32px;
@@ -41,18 +38,41 @@ body {
 
 .header-page {
     text-decoration: none;
-    color: black;
-    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 15%;
+    color: rgb(194, 192, 192);
+    /* box-shadow: inset 2px 2px 4px rgba(1, 49, 68, 0.5); */
+    /* background: linear-gradient(to bottom, #056a92 100%, #028080 0%);
+    border-radius: 30px 12px; */
     padding: 16px;
-
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
 }
 
-#header-logo {
+.header-page:hover {
+    /* background: linear-gradient(to bottom, #056a92 0%, #028080 100%); */
+    background: linear-gradient(to top,  #2b2929 25%, #3a3939 75%);
+    font-weight: bold;
+    /* color: aliceblue; */
+    text-decoration: underline;
+}
+
+h1.name {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: 0px;
+    color: #0164d6;
+    font-family: Consolas, Calibri, Tahoma, sans-serif;
+}
+/* #header-logo {
     box-shadow: inset   2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     width: 48px;
     height: 48px;
+} */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #808080;
+    height: 10000px;
 }
